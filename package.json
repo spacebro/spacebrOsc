@@ -1,0 +1,19 @@
+{
+  "name": "spacebrosc",
+  "version": "0.0.1",
+  "description": "converts spacebro events to OSC and the opposite",
+  "main": "index.js",
+  "scripts": {
+    "test": "node example"
+  },
+  "keywords": [
+    "spacbro",
+    "osc",
+    "realtime"
+  ],
+  "author": "hugohil",
+  "license": "MIT",
+  "dependencies": {
+    "spacebro-client": "^0.2.1"
+  }
+}
