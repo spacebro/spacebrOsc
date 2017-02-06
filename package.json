@@ -14,6 +14,7 @@
   "author": "hugohil",
   "license": "MIT",
   "dependencies": {
+    "osc": "^2.2.0",
     "spacebro-client": "^0.2.1"
   }
 }
