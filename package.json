@@ -10,5 +10,9 @@
     "realtime"
   ],
   "author": "hugohil",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "osc": "^2.2.4",
+    "spacebro-client": "^0.4.7"
+  }
 }
