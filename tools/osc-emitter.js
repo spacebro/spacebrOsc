@@ -1,3 +1,7 @@
+/*
+  * This is a test script to emit osc messages and bundes
+ */
+
 const osc = require('osc')
 
 const udpPort = new osc.UDPPort({

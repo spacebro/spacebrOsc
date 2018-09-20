@@ -1,0 +1,12 @@
+{
+  "verbose": true,
+  "spacebro": {
+    "host": "127.0.0.1",
+    "port": 8888,
+    "channelName": "spacebrosc"
+  },
+  "osc": {
+    "localAddress": "0.0.0.0",
+    "localPort": 6060
+  }
+}

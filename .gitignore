@@ -99,8 +99,4 @@ node_modules
 .vscode/
 build/
 
-example/pinger.js
-example/ponger.js
-example/dist
-
-dist
+settings/settings.json
