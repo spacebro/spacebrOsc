@@ -40,3 +40,7 @@ $ node index.js
   }
 }
 ```
+
+### Example
+
+If you don't have an OSC sending app, you can test with the `tools/osc-emitter.js` script. Just make sure the settings matches.
