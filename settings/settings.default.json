@@ -1,5 +1,6 @@
 {
   "verbose": true,
+  "useCustomEventName": false,
   "spacebro": {
     "host": "127.0.0.1",
     "port": 8888,

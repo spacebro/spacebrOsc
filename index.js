@@ -2,10 +2,10 @@
 
 const settings = require('standard-settings')
 
-console.log(settings)
-
 const { SpacebroClient } = require('spacebro-client')
 const osc = require('osc')
+
+const customEvent = settings.get('useCustomEventName')
 
 const client = new SpacebroClient({
   host: settings.get('spacebro:host') || '127.0.0.1',
@@ -31,7 +31,9 @@ udpPort.on('bundle', function (oscBundle, timeTag, info) {
     console.log(info)
   }
   oscBundle.packets.forEach(packet => {
-    client.emit(packet.address.slice(1), packet.args)
+    const event = customEvent || packet.address.slice(1)
+    customEvent && packet.args.push({ OSCaddress: packet.address })
+    client.emit(event, packet.args)
   })
 })
 
@@ -41,7 +43,9 @@ udpPort.on('message', function (oscMessage, timeTag, info) {
     console.log(oscMessage)
     console.log(info)
   }
-  client.emit(oscMessage.address.slice(1), oscMessage.args)
+  const event = customEvent || oscMessage.address.slice(1)
+  customEvent && oscMessage.args.push({ OSCaddress: oscMessage.address })
+  client.emit(event, oscMessage.args)
 })
 
 udpPort.open()

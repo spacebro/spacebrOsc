@@ -29,13 +29,17 @@ $ node index.js
 ```js
 {
   "verbose": false, // does spacebrOsc logs everything or not
+  "useCustomEventName": 'my-custom-event',
+  // if set to false, OSC message address will be used as spacebro event name
+  // else, provide a string that will be the event name and OSC message address will be sent as data
   "spacebro": {
     "host": "127.0.0.1", // host of your spacebro server
     "port": 8888, // port of your spacebro server
     "channelName": "spacebrosc" // channel name you want to use (optionnal)
   },
   "osc": {
-    "localAddress": "0.0.0.0", // on which local ip do you want to open an UDP socket for your OSC sending app to connect
+    "localAddress": "0.0.0.0",
+    // on which local ip do you want to open an UDP socket for your OSC sending app to connect
     "localPort": 12345 // on which port you open that UDP socket
   }
 }
