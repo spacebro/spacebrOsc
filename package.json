@@ -1,20 +1,14 @@
 {
   "name": "spacebrosc",
   "version": "0.0.1",
-  "description": "converts spacebro events to OSC and the opposite",
+  "description": "converts OSC bundles to spacebro events",
   "main": "index.js",
-  "scripts": {
-    "test": "node example"
-  },
+  "scripts": {},
   "keywords": [
     "spacbro",
     "osc",
     "realtime"
   ],
   "author": "hugohil",
-  "license": "MIT",
-  "dependencies": {
-    "osc": "^2.2.0",
-    "spacebro-client": "^0.2.1"
-  }
+  "license": "MIT"
 }
