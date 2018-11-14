@@ -6,7 +6,7 @@ const osc = require('osc')
 
 const udpPort = new osc.UDPPort({
   remoteAddress: '127.0.0.1',
-  remotePort: 6060,
+  remotePort: 12345,
   metadata: true
 })
 
