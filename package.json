@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "converts OSC bundles to spacebro events",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "node index.js"
+  },
   "keywords": [
     "spacbro",
     "osc",
